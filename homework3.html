@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <title>Homework3_吴非</title>
+  <script src="quicksort.js" type="text/javascript"></script>
+  <script> var test = function () {
+      // alert(123)
+      var buffer = document.getElementById("quicksort").value;
+      var arr = buffer.split(",");
+      alert(arr[1])
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="quicksort">
+    <p>输入数组:(逗号间隔)</p>
+    <form name="myform">
+      <input type="text" id="quicksort">
+      <!-- <input type="button" name="button" value="" onclick="QuickSort()" /> -->
+      <button type="button" onclick="QuickSort()">快排</button>
+    </form>
+    <div>
+      <span>排序前:</span>
+      <span id="qkbefore"></span>
+    </div>
+    <div>
+      <span>排序后:</span>
+      <span id="qkafter"></span>
+    </div>
+  </div>
+
+  <br>
+  <div class="去重">
+    <p>输入数组:(逗号间隔)</p>
+    <form name="myform">
+      <input type="text" id="unique">
+      <!-- <input type="button" name="button" value="" onclick="Unique()">去重<input /> -->
+      <button type="button" onclick="Unique()">去重</button>
+      <!-- 提交表单页面自动刷新 必须要加  type="button" 否则答案只出现一瞬间页面就刷新了-->
+    </form>
+    <div>
+      <span>去重前:</span>
+      <span id="unique_before"></span>
+    </div>
+    <div>
+      <span>去重后(附带排序):</span>
+      <span id="unique_after"></span>
+    </div>
+  </div>
+</body>
